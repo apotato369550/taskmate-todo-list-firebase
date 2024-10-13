@@ -1,0 +1,117 @@
+/* src/components/css/HomePage.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+/* Optional: Logo Styling */
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Hero Section Styling */
+.hero {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 48px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+/* Buttons Styling */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  color: white;
+}
+
+.signup-btn {
+  background-color: #28a745;
+}
+
+.signup-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.login-btn {
+  background-color: #007bff;
+}
+
+.login-btn:hover {
+  background-color: #0069d9;
+  transform: translateY(-2px);
+}
+
+/* Decorative Graphics (Optional) */
+.decorative-graphics {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  /* Example: Add an SVG or image as a decorative element */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,135 @@
+/* src/components/css/ToDoList.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Set a max width for header */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  color: #333333;
+}
+
+.logout-btn {
+  padding: 10px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.task-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add space between inputs */
+  width: 100%;
+  max-width: 800px; /* Set a max width for input section */
+  margin-bottom: 20px;
+}
+
+.input-field,
+.priority-select {
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus,
+.priority-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.priority-select {
+  -webkit-appearance: none; /* Remove default styling in some browsers */
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff; /* Ensure dropdown background is white */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4H4z" fill="%23333"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px; /* Adjust icon size */
+}
+
+.add-btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #0069d9;
+  transform: translateY(-2px);
+}
+
+.tasks-list {
+  width: 100%;
+  max-width: 800px; /* Set a max width for the task list */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between tasks */
+}
+
+.no-tasks {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #555555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .input-field,
+  .priority-select {
+    font-size: 14px;
+  }
+
+  .add-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

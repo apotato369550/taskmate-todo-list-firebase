@@ -1,0 +1,26 @@
+/* index.css */
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the body to use Flexbox for centering */
+body {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;    /* Vertical centering */
+  min-height: 100vh;      /* Full viewport height */
+  background-color: #f0f0f0; /* Optional: Background color for aesthetics */
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+/* Ensure the root element takes full height */
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
