@@ -40,9 +40,18 @@ function App() {
         ) : (
           // If user is not logged in, show home page with login/signup options
           <>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/login" element={<LoginForm />} />
-            <Route path="/signup" element={<SignUpForm />} />
+            <Route
+              path="/taskmate-todo-list-firebase/"
+              element={<HomePage />}
+            />
+            <Route
+              path="/taskmate-todo-list-firebase/login"
+              element={<LoginForm />}
+            />
+            <Route
+              path="/taskmate-todo-list-firebase/signup"
+              element={<SignUpForm />}
+            />
           </>
         )}
       </Routes>
