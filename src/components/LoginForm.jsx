@@ -64,7 +64,10 @@ const LoginForm = () => {
         </button>
         <p className="redirect-text">
           Don't have an account?{" "}
-          <Link to="/signup" className="redirect-link">
+          <Link
+            to="/taskmate-todo-list-firebase/signup"
+            className="redirect-link"
+          >
             Register Here!
           </Link>
         </p>

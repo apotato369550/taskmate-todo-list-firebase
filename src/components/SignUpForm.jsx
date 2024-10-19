@@ -22,54 +22,41 @@ const SignUpForm = () => {
 
   return (
     <div className="signup-container">
-      {" "}
-      {/* Updated class name */}
       <form className="signup-form" onSubmit={handleSubmit}>
-        {" "}
-        {/* Updated class name */}
-        <h2 className="form-title">Sign Up</h2> {/* Added form-title class */}
+        <h2 className="form-title">Sign Up</h2> 
         <div className="form-group">
-          {" "}
-          {/* Wrap label and input */}
           <label htmlFor="email" className="form-label">
-            {" "}
-            {/* Updated class name */}
             Email:
             <input
               type="text"
               className="form-input"
               onChange={(e) => setEmail(e.target.value)}
-            />{" "}
-            {/* Updated class name */}
+            />
           </label>
         </div>
         <div className="form-group">
-          {" "}
-          {/* Wrap label and input */}
           <label htmlFor="password" className="form-label">
-            {" "}
-            {/* Updated class name */}
             Password:
             <input
               type="password"
               className="form-input"
               onChange={(e) => setPassword(e.target.value)}
-            />{" "}
-            {/* Updated class name */}
+            />
           </label>
         </div>
         <button type="submit" className="submit-btn">
           Sign Up
-        </button>{" "}
-        {/* Updated class name */}
+        </button>
         <p className="redirect-text">
-          {" "}
-          {/* Updated class name */}
-          Already Registered?{" "}
-          <Link to="/login" className="redirect-link">
+          
+          Already Registered?
+          <Link
+            to="/taskmate-todo-list-firebase/login"
+            className="redirect-link"
+          >
             Login
-          </Link>{" "}
-          Here! {/* Updated class name */}
+          </Link>
+          Here! 
         </p>
       </form>
     </div>

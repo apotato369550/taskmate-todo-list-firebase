@@ -109,7 +109,7 @@ const ToDoList = ({ setLogin }) => {
     try {
       await signOut(auth);
       setLogin(null);
-      navigate("/");
+      navigate("/taskmate-todo-list-firebase/");
     } catch (err) {
       console.error("Error logging out: ", err);
     }
